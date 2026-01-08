@@ -1,0 +1,317 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffaf3;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #4b2e2e;
+}
+
+.logo {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #f4c27a;
+}
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #f4c27a;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu, .about, .contact {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.menu-items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.menu h3 {
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+  color: #4b2e2e;
+  text-align: center;
+}
+
+.menu-item h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.menu-item p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.menu-item span {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #4b2e2e;
+  margin-bottom: 10px;
+}
+
+.menu-item button {
+  background: #4b2e2e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu-item button:hover {
+  background: #3a2323;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #4b2e2e;
+  color: white;
+  cursor: pointer;
+}
+
+.signin {
+  padding: 60px 40px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.signin form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signin label {
+  text-align: left;
+  font-weight: 600;
+}
+
+.signin input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signin button {
+  padding: 10px 25px;
+  border: none;
+  background: #4b2e2e;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.signin button:hover {
+  background: #3a2323;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.form-toggle button.active {
+  background: #4b2e2e;
+  color: white;
+}
+
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cart-item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item h3 {
+  margin: 0;
+}
+
+.cart-item p {
+  margin: 0 20px;
+}
+
+.cart-item button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background: #c9302c;
+}
+
+#cart-total {
+  margin: 20px 0;
+}
+
+#checkout-btn {
+  background: #4b2e2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#checkout-btn:hover {
+  background: #3a2323;
+}
+
+.delivery {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.delivery form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.delivery label {
+  text-align: left;
+  font-weight: 600;
+}
+
+.delivery input, .delivery textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.delivery textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.delivery button {
+  background: #4b2e2e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delivery button:hover {
+  background: #3a2323;
+}
+
+footer {
+  background: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

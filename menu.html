@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - LFC Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">LFC Cafe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+         <li><a href="|">|</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+    
+    <h3>Coffee & Espresso Drinks</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=300" alt="Espresso" />
+        <h4>Espresso</h4>
+        <p>Rich and bold coffee shot</p>
+        <span>$3.50</span>
+        <button onclick="addToCart('Espresso', 3.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=300" alt="Latte" />
+        <h4>Caffe Latte</h4>
+        <p>Smooth espresso with steamed milk</p>
+        <span>$4.50</span>
+        <button onclick="addToCart('Caffe Latte', 4.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=300" alt="Cappuccino" />
+        <h4>Cappuccino</h4>
+        <p>Espresso with frothy milk and cocoa</p>
+        <span>$4.00</span>
+        <button onclick="addToCart('Cappuccino', 4.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300" alt="Americano" />
+        <h4>Americano</h4>
+        <p>Diluted espresso with hot water</p>
+        <span>$3.00</span>
+        <button onclick="addToCart('Americano', 3.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=300" alt="Mocha" />
+        <h4>Mocha</h4>
+        <p>Espresso with chocolate and steamed milk</p>
+        <span>$4.75</span>
+        <button onclick="addToCart('Mocha', 4.75)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300" alt="Macchiato" />
+        <h4>Macchiato</h4>
+        <p>Espresso with a dollop of foamed milk</p>
+        <span>$4.25</span>
+        <button onclick="addToCart('Macchiato', 4.25)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Teas</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300" alt="Green Tea" />
+        <h4>Green Tea</h4>
+        <p>Refreshing and antioxidant-rich tea</p>
+        <span>$2.50</span>
+        <button onclick="addToCart('Green Tea', 2.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1556679343-c451b2f50c49?w=300" alt="Black Tea" />
+        <h4>Black Tea</h4>
+        <p>Classic bold and robust tea</p>
+        <span>$2.50</span>
+        <button onclick="addToCart('Black Tea', 2.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=300" alt="Chai Tea" />
+        <h4>Chai Tea</h4>
+        <p>Spiced black tea with milk</p>
+        <span>$3.00</span>
+        <button onclick="addToCart('Chai Tea', 3.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=300" alt="Herbal Tea" />
+        <h4>Chamomile Herbal Tea</h4>
+        <p>Calming herbal infusion</p>
+        <span>$3.00</span>
+        <button onclick="addToCart('Chamomile Herbal Tea', 3.00)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Pastries & Baked Goods</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300" alt="Croissant" />
+        <h4>Butter Croissant</h4>
+        <p>Flaky, buttery pastry</p>
+        <span>$2.50</span>
+        <button onclick="addToCart('Butter Croissant', 2.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=300" alt="Muffin" />
+        <h4>Blueberry Muffin</h4>
+        <p>Fresh baked with blueberries</p>
+        <span>$3.00</span>
+        <button onclick="addToCart('Blueberry Muffin', 3.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300" alt="Cookie" />
+        <h4>Chocolate Chip Cookie</h4>
+        <p>Classic chewy chocolate chip cookie</p>
+        <span>$2.00</span>
+        <button onclick="addToCart('Chocolate Chip Cookie', 2.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300" alt="Scone" />
+        <h4>Blueberry Scone</h4>
+        <p>Buttery scone with blueberries</p>
+        <span>$3.25</span>
+        <button onclick="addToCart('Blueberry Scone', 3.25)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Breakfast Items</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300" alt="Omelet" />
+        <h4>Veggie Omelet</h4>
+        <p>Three-egg omelet with fresh vegetables</p>
+        <span>$7.50</span>
+        <button onclick="addToCart('Veggie Omelet', 7.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=300" alt="Pancakes" />
+        <h4>Buttermilk Pancakes</h4>
+        <p>Fluffy pancakes with maple syrup</p>
+        <span>$6.00</span>
+        <button onclick="addToCart('Buttermilk Pancakes', 6.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300" alt="Breakfast Sandwich" />
+        <h4>Breakfast Sandwich</h4>
+        <p>Egg, bacon, and cheese on toasted bread</p>
+        <span>$5.50</span>
+        <button onclick="addToCart('Breakfast Sandwich', 5.50)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Lunch Offerings</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1481070414801-51b21d9e8305?w=300" alt="Chicken Salad Sandwich" />
+        <h4>Chicken Salad Sandwich</h4>
+        <p>Grilled chicken salad on ciabatta</p>
+        <span>$8.50</span>
+        <button onclick="addToCart('Chicken Salad Sandwich', 8.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=300" alt="Caesar Salad" />
+        <h4>Caesar Salad</h4>
+        <p>Crisp romaine with Caesar dressing</p>
+        <span>$7.00</span>
+        <button onclick="addToCart('Caesar Salad', 7.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300" alt="Turkey Wrap" />
+        <h4>Turkey Wrap</h4>
+        <p>Turkey, veggies, and ranch in a tortilla</p>
+        <span>$7.50</span>
+        <button onclick="addToCart('Turkey Wrap', 7.50)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Seasonal Specials & Unique Beverages</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=300" alt="Pumpkin Spice Latte" />
+        <h4>Pumpkin Spice Latte</h4>
+        <p>Seasonal favorite with pumpkin spice</p>
+        <span>$5.00</span>
+        <button onclick="addToCart('Pumpkin Spice Latte', 5.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300" alt="Iced Coffee" />
+        <h4>Iced Coffee</h4>
+        <p>Cold brewed coffee over ice</p>
+        <span>$3.50</span>
+        <button onclick="addToCart('Iced Coffee', 3.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=300" alt="Berry Smoothie" />
+        <h4>Berry Smoothie</h4>
+        <p>Mixed berries blended to perfection</p>
+        <span>$4.50</span>
+        <button onclick="addToCart('Berry Smoothie', 4.50)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p> LFC Cafe | Made with Love</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">
