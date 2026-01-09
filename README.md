@@ -32,4 +32,4 @@ Google Maps integration
 Clean and modern cafe UI
 
 
-Website link;  https://lfccafe.netlify.app/
+Website link;  https://aryanuraw9.github.io/LFCcafe/
